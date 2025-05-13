@@ -1,0 +1,20 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Ажлын Чатбот</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="w-full max-w-md bg-white p-6 rounded-2xl shadow-md">
+    <h2 class="text-2xl font-bold text-center mb-4">Ажлын Чатбот</h2>
+    <div id="chatbox" class="h-72 overflow-y-auto bg-gray-50 p-3 mb-4 rounded border text-sm"></div>
+    <div class="flex">
+      <input type="text" id="userInput" placeholder="Асуултаа бичнэ үү..." class="flex-1 border px-3 py-2 rounded-l outline-none" />
+      <button onclick="sendMessage()" class="bg-blue-500 text-white px-4 py-2 rounded-r">Илгээх</button>
+    </div>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html>
